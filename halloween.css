@@ -1,0 +1,106 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+}
+
+.wide-col {
+	width: 65%;
+	height: 100%;
+	display: block;
+}
+
+.narrow-col {
+	width: 35%;
+	height: 100%;
+}
+
+.box {
+	width: 100%;
+	height: 50%;
+	display: flex;
+}
+
+.row {
+	width: 100%;
+	height: calc(100%/3);
+	display: flex;
+	background-color: #FF9900;
+}
+
+.orange {background-color: #FF9900;}
+.orange1 {background-color: #FF9900;}
+.black {background-color: black;}
+
+.background1 {background-image:  url("images/wjol.gif"); }
+.background2 {background-image: url("images/halloween.jpg");}
+
+.imagesize1 {
+	width: 80%;
+	height: 50%;
+}
+
+.imagesize2 {
+	width: 60%;
+	height: 70%;
+}
+
+.center-horizontal {
+	align-items: center;	
+}
+
+.center-vertical {
+	justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+	body {
+	display: block;
+	}
+	.wide-col {
+		height: 50%;
+		width: 100%;
+	}
+	.narrow-col {
+		height: 50%;
+		width: 100%;
+		display: flex;
+	}
+	.box {
+		width: 50%;
+		height: 100%;
+		display: flex;
+	}
+	.imagesize1 {
+		width: 60%;
+		height: 70%;
+	}	
+}
+/* comment */
+@media only screen and (max-width: 500px) {
+	.black {background-color: #F89520;}
+	.orange  {
+		background-color: black;
+		background-image: url("images/zombie.gif"); 
+	}
+	.imagesize2 {
+		width: 50%;
+		height: 60%;
+	}
+	.wide-col {
+		height: 40%;
+		width: 100%;
+	}
+	.narrow-col {
+		height: 60%;
+		width: 100%;
+		display: block;
+	}
+	.box {
+		width: 100%;
+		height: 50%;
+		display: flex;
+	}
+}
+
